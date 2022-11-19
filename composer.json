@@ -20,12 +20,12 @@
       "homepage": "https://github.com/Sadi01"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
     "yiisoft/yii2": "~2.0.14",
     "kartik-v/yii2-grid": "@dev",
-    "kartik-v/bootstrap-fileinput": "dev-master",
+    "kartik-v/yii2-widget-fileinput": "@dev",
     "kartik-v/yii2-number": "@dev",
     "sadi01/yii2-daterangepicker": "*",
     "ext-curl": "*",
