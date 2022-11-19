@@ -1,6 +1,6 @@
 <?php
 
-namespace common\behaviors;
+namespace sadi01\moresettings\behaviors;
 
 use Yii;
 use yii\base\Behavior;

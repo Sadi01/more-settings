@@ -1,9 +1,9 @@
 <?php
 
-namespace common\validators;
+namespace sadi01\moresettings\validators;
 
 use Yii;
-use common\assetBundles\RunwidgetValidationAsset;
+use sadi01\moresettings\assetBundles\ValidationAsset;
 use yii\validators\Validator;
 use yii\helpers\Html;
 use yii\helpers\Json;
@@ -12,7 +12,7 @@ use yii\web\JsExpression;
 /**
  * NationalCodeValidator validates that the attribute value is a national code.
  *
- * @author RunWidget(SADi) <sadshafiei.01@gmail.com>
+ * @author SADi <sadshafiei.01@gmail.com>
  */
 
 class NationalCodeValidator extends Validator
@@ -74,10 +74,10 @@ class NationalCodeValidator extends Validator
      */
     public function clientValidateAttribute($model, $attribute, $view)
     {
-        RunwidgetValidationAsset::register($view);
+        ValidationAsset::register($view);
         $options = $this->getClientOptions($model, $attribute);
 
-        return 'yii.runwidgetvalidation.nationalcode(value, messages, ' . Json::htmlEncode($options) . ');';
+        return 'yii.validation.nationalcode(value, messages, ' . Json::htmlEncode($options) . ');';
     }
 
     /**

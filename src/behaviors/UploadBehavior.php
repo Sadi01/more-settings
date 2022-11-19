@@ -1,9 +1,9 @@
 <?php
 
-namespace common\behaviors;
+namespace sadi01\moresettings\behaviors;
 
 use Closure;
-use runwidget\formbuilder\models\FormExtraFieldActiveRecord;
+use yii\db\ActiveRecord;
 use Yii;
 use yii\base\Behavior;
 use yii\base\InvalidConfigException;
@@ -20,7 +20,7 @@ use yii\web\UploadedFile;
  * To use UploadBehavior, insert the following code to your ActiveRecord class:
  *
  * ```php
- * use common\behaviors\UploadBehavior;
+ * use sadi01\moresettings\behaviors\UploadBehavior;
  *
  * function behaviors()
  * {
@@ -178,7 +178,7 @@ class UploadBehavior extends Behavior
         }
         if ($this->attribute === null) return false;
 
-        /** @var FormExtraFieldActiveRecord $model */
+        /** @var ActiveRecord $model */
         $model = $this->owner;
         $file = null;
 
@@ -216,7 +216,7 @@ class UploadBehavior extends Behavior
     {
         if ($this->attribute === null) return false;
 
-        /** @var FormExtraFieldActiveRecord $model */
+        /** @var ActiveRecord $model */
         $model = $this->owner;
 
         if ($this->oldAttribute instanceof \Closure) {
@@ -279,7 +279,7 @@ class UploadBehavior extends Behavior
      */
     public function beforeDelete()
     {
-        /** @var FormExtraFieldActiveRecord $model */
+        /** @var ActiveRecord $model */
         $model = $this->owner;
 
         if ($this->attribute instanceof \Closure) {

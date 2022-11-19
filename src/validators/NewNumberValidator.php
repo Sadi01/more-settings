@@ -1,5 +1,5 @@
 <?php
-namespace common\validators;
+namespace sadi01\moresettings\validators;
 
 use Yii;
 use yii\helpers\Json;
@@ -11,7 +11,7 @@ use yii\web\JsExpression;
 /**
  * NewNumberValidator validates that the attribute value is a number.
  * $min and $max can be closure too in this version.
- * @author RunWidget(SADi) <sadshafiei.01@gmail.com>
+ * @author SADi <sadshafiei.01@gmail.com>
  */
 
 class NewNumberValidator extends Validator

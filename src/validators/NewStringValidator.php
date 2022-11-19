@@ -1,5 +1,5 @@
 <?php
-namespace common\validators;
+namespace sadi01\moresettings\validators;
 
 use Yii;
 use yii\validators\ValidationAsset;
@@ -12,7 +12,7 @@ use yii\validators\Validator;
  *
  * $length, $min, $max can be closure too in this version.
  *
- * @author RunWidget(SADi) <sadshafiei.01@gmail.com>
+ * @author SADi <sadshafiei.01@gmail.com>
  */
 class NewStringValidator extends Validator
 {

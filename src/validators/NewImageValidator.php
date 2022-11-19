@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace common\validators;
+namespace sadi01\moresettings\validators;
 
 use Yii;
 use yii\validators\ValidationAsset;

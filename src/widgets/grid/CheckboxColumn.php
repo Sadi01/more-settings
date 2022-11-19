@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace common\widgets\grid;
+namespace sadi01\moresettings\widgets\grid;
 
 use Closure;
 use yii\helpers\Html;

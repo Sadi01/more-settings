@@ -1,6 +1,6 @@
 <?php
 
-namespace common\traits;
+namespace sadi01\moresettings\traits;
 
 use yii\base\Model;
 use yii\web\Response;

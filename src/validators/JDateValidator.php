@@ -1,9 +1,9 @@
 <?php
 
-namespace common\validators;
+namespace sadi01\moresettings\validators;
 
 use Yii;
-use common\assetBundles\RunwidgetValidationAsset;
+use sadi01\moresettings\assetBundles\ValidationAsset;
 use yii\validators\Validator;
 use yii\helpers\Html;
 use yii\helpers\Json;
@@ -12,7 +12,7 @@ use yii\web\JsExpression;
 /**
  * JDateValidator validates that the attribute value is a Jalali Date.
  *
- * @author RunWidget(SADi) <sadshafiei.01@gmail.com>
+ * @author SADi <sadshafiei.01@gmail.com>
  */
 
 class JDateValidator extends Validator
@@ -61,10 +61,10 @@ class JDateValidator extends Validator
      */
     public function clientValidateAttribute($model, $attribute, $view)
     {
-        RunwidgetValidationAsset::register($view);
+        ValidationAsset::register($view);
         $options = $this->getClientOptions($model, $attribute);
 
-        return 'yii.runwidgetvalidation.jalalidate(value, messages, ' . Json::htmlEncode($options) . ');';
+        return 'yii.validation.jalalidate(value, messages, ' . Json::htmlEncode($options) . ');';
     }
 
     /**

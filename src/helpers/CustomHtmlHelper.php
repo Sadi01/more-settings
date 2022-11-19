@@ -1,13 +1,12 @@
 <?php
 
-namespace common\helpers;
+namespace sadi01\moresettings\helpers;
 
 use Yii;
 use yii\helpers\Html;
 
 class CustomHtmlHelper
 {
-
     /**
      * Return loading tag
      * @param string $loadingText [optional]

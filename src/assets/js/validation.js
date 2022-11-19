@@ -1,4 +1,4 @@
-window.yii.runwidgetvalidation = (function ($) {
+window.yii.validation = (function ($) {
     var pub = {
         isEmpty: function (value) {
             return value === null || value === undefined || ($.isArray(value) && value.length === 0) || value === '';

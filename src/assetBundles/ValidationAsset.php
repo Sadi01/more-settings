@@ -1,16 +1,17 @@
 <?php
 
-namespace common\assetBundles;
+namespace sadi01\moresettings\assetBundles;
 
 use yii\web\AssetBundle;
 
-
-class RunwidgetValidationAsset extends AssetBundle
+class ValidationAsset extends AssetBundle
 {
-    public $sourcePath = '@common/assets';
+    public $sourcePath = __DIR__ . '/assets';
+
     public $js = [
-        'js/runwidget.validation.js',
+        'js/validation.js',
     ];
+
     public $depends = [
         'yii\web\YiiAsset',
     ];

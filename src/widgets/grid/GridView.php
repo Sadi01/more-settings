@@ -1,6 +1,6 @@
 <?php
 
-namespace common\widgets\grid;
+namespace sadi01\moresettings\widgets\grid;
 
 use kartik\grid\GridView as KartikGridView;
 use yii\helpers\ArrayHelper;

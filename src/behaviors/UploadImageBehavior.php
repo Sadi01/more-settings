@@ -1,6 +1,6 @@
 <?php
 
-namespace common\behaviors;
+namespace sadi01\moresettings\behaviors;
 
 use FFMpeg\Coordinate\TimeCode;
 use FFMpeg\FFMpeg;
@@ -20,7 +20,7 @@ use yii\imagine\Image;
  * To use UploadImageBehavior, insert the following code to your ActiveRecord class:
  *
  * ```php
- * use common\behaviors\UploadImageBehavior;
+ * use sadi01\moresettings\behaviors\UploadImageBehavior;
  *
  * function behaviors()
  * {

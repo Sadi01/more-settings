@@ -1,5 +1,5 @@
 <?php
-namespace common\validators;
+namespace sadi01\moresettings\validators;
 
 use Yii;
 use yii\helpers\FileHelper;
@@ -19,7 +19,7 @@ use yii\web\UploadedFile;
  *
  * $minSize and $maxSize can be closure too in this version.
 
- * @author RunWidget(SADi) <sadshafiei.01@gmail.com>
+ * @author SADi <sadshafiei.01@gmail.com>
  */
 class NewFileValidator extends Validator
 {
