@@ -68,7 +68,7 @@ class GridView extends KartikGridView
                 [
                     'content' =>
                         Html::a('<i class="far fa-plus"></i>', ['create'], [
-                            'title' => Yii::t('common', 'Add'),
+                            'title' => Yii::t('more-settings/common', 'Add'),
                             'data' => [
                                 'toggle' => 'tooltip',
                                 'pjax' => '0',
@@ -77,7 +77,7 @@ class GridView extends KartikGridView
                         ]) . ' ' .
                         Html::a('<i class="far fa-trash-alt"></i>', ['delete-selected'], [
                             'class' => 'btn btn-danger ml-1 mb-2 grid-delete-selected-btn',
-                            'title' => Yii::t('common', 'Remove selected row(s).'),
+                            'title' => Yii::t('more-settings/common', 'Remove selected row(s).'),
                             'data' => $this->enablePjaxDelete ?
                                 [
                                     'toggle' => 'tooltip',
@@ -97,7 +97,7 @@ class GridView extends KartikGridView
                     'content' =>
                         Html::a('<i class="far fa-trash-alt"></i>', ['delete-selected'], [
                             'class' => 'btn btn-danger ml-1 mb-2 grid-delete-selected-btn',
-                            'title' => Yii::t('common', 'Remove selected row(s).'),
+                            'title' => Yii::t('more-settings/common', 'Remove selected row(s).'),
                             'data' => $this->enablePjaxDelete ?
                                 [
                                     'toggle' => 'tooltip',
@@ -119,7 +119,7 @@ class GridView extends KartikGridView
             ArrayHelper::merge(
                 [
                     [
-                        'class' => 'common\widgets\grid\CheckboxColumn',
+                        'class' => 'sadi01\moresettings\widgets\grid\CheckboxColumn',
                         'checkboxOptions' => [
                             'class' => 'custom-control-input'
                         ]
@@ -131,13 +131,13 @@ class GridView extends KartikGridView
         Parent::init();
 
         if ($this->showCustomToolbar && $this->enablePjaxDelete) {
-            $confirmTitle = Yii::t('common', 'Are you sure?');
-            $confirmText = Yii::t('common', "You won't be able to revert this!");
-            $confirmBtnText = Yii::t('common', "Yes, delete selected items!");
-            $cancelBtnText = Yii::t('common', "Cancel");
-            $deletedTitle = Yii::t('common', "Items have been deleted!");
-            $errorOnDeleteTitle = Yii::t('common', "Error on delete!");
-            $deletedText = Yii::t('common', "Selected items have been deleted.");
+            $confirmTitle = Yii::t('more-settings/common', 'Are you sure?');
+            $confirmText = Yii::t('more-settings/common', "You won't be able to revert this!");
+            $confirmBtnText = Yii::t('more-settings/common', "Yes, delete selected items!");
+            $cancelBtnText = Yii::t('more-settings/common', "Cancel");
+            $deletedTitle = Yii::t('more-settings/common', "Items have been deleted!");
+            $errorOnDeleteTitle = Yii::t('more-settings/common', "Error on delete!");
+            $deletedText = Yii::t('more-settings/common', "Selected items have been deleted.");
 
             $view->registerJs("           
             handleDeleteSelected = function(e){
@@ -155,7 +155,7 @@ class GridView extends KartikGridView
                     
                 }else{
                      swal({
-                           title: '" . Yii::t('common', 'Select one or more row!') . "',
+                           title: '" . Yii::t('more-settings/common', 'Select one or more row!') . "',
                            type: 'info',
                            confirmButtonText: '" . Html::tag('i', null, ['class' => 'fas fa-thumbs-up font-22']) . "',
                           });
@@ -234,7 +234,7 @@ class GridView extends KartikGridView
                     
                 }else{
                      swal({
-                           title: '" . Yii::t('common', 'Select one or more row!') . "',
+                           title: '" . Yii::t('more-settings/common', 'Select one or more row!') . "',
                            type: 'info',
                            confirmButtonText: '" . Html::tag('i', null, ['class' => 'fas fa-thumbs-up font-22']) . "',
                           });
@@ -252,13 +252,13 @@ class GridView extends KartikGridView
 
         if ($this->enablePjaxDelete) {
 
-            $confirmTitle = Yii::t('common', 'Are you sure?');
-            $confirmText = Yii::t('common', "You won't be able to revert this!");
-            $confirmBtnText = Yii::t('common', "Yes, delete it!");
-            $cancelBtnText = Yii::t('common', "Cancel");
-            $deletedTitle = Yii::t('common', "Deleted!");
-            $errorOnDeleteTitle = Yii::t('common', "Error on delete!");
-            $deletedText = Yii::t('common', "Item has been deleted.");
+            $confirmTitle = Yii::t('more-settings/common', 'Are you sure?');
+            $confirmText = Yii::t('more-settings/common', "You won't be able to revert this!");
+            $confirmBtnText = Yii::t('more-settings/common', "Yes, delete it!");
+            $cancelBtnText = Yii::t('more-settings/common', "Cancel");
+            $deletedTitle = Yii::t('more-settings/common', "Deleted!");
+            $errorOnDeleteTitle = Yii::t('more-settings/common', "Error on delete!");
+            $deletedText = Yii::t('more-settings/common', "Item has been deleted.");
 
             $view->registerJs("           
             handleDeleteGridItem = function(e) {

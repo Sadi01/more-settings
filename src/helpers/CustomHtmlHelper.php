@@ -14,7 +14,7 @@ class CustomHtmlHelper
      */
     public static function loadingTag($loadingText = NULL)
     {
-        $loadingText = $loadingText ?: Yii::t('common', 'Loading ...');
+        $loadingText = $loadingText ?: Yii::t('more-settings/common', 'Loading ...');
 
         $loadingTag = Html::tag('div',
             Html::tag('div',

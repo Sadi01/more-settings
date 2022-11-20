@@ -11,10 +11,13 @@ use yii\helpers\Url;
 use yii\bootstrap4\Modal;
 use yii\widgets\Pjax;
 use sadi01\moresettings\helpers\CustomHtmlHelper;
+use yii\web\View;
+use sadi01\moresettings\models\Settings;
+use sadi01\moresettings\models\SettingOption;
 
-/* @var $this yii\web\View */
-/* @var $model sadi01\moresettings\models\Settings */
-/* @var $modelsOption sadi01\moresettings\models\SettingOption[] */
+/* @var $this View */
+/* @var $model Settings */
+/* @var $modelsOption SettingOption[] */
 /* @var $form ActiveForm */
 ?>
 
@@ -196,7 +199,7 @@ use sadi01\moresettings\helpers\CustomHtmlHelper;
             </div>
             <div class="col-sm-4">
                 <?= $form->field($model, 'custom_data_source')->dropDownList(
-                    Settings::itemAlias('CustomDataSource'),
+                    Settings::itemAlias('CustomDataSource') ?: [],
                     [
                         'prompt' => Yii::t('more-settings', 'Choose custom data source...')
                     ]
@@ -224,7 +227,7 @@ Pjax::end();
 
 <?php
 $loadingTag = CustomHtmlHelper::loadingTag();
-$loadingText = Yii::t('common', 'Loading ...');
+$loadingText = Yii::t('more-settings/common', 'Loading ...');
 
 Modal::begin([
     'id' => 'add-category-modal',

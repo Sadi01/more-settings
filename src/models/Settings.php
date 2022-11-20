@@ -116,7 +116,7 @@ class Settings extends \yii\db\ActiveRecord
                     [Settings::tableName() . '.is_deleted' => 0],
                     [Settings::tableName() . '.deleted_at' => null],
                 ]);
-            }, 'message' => Yii::t('common', 'Repetitive Setting Category Name')],
+            }, 'message' => Yii::t('more-settings/common', 'Repetitive Setting Category Name')],
             [['created_by'], 'exist', 'skipOnError' => false, 'targetClass' => User::class, 'targetAttribute' => ['created_by' => 'id']],
             [['updated_by'], 'exist', 'skipOnError' => false, 'targetClass' => User::class, 'targetAttribute' => ['updated_by' => 'id']],
 

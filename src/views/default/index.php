@@ -57,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'created_at:datetime',
 
                 [
-                    'class' => 'common\widgets\grid\ActionColumn',
+                    'class' => 'sadi01\moresettings\widgets\grid\ActionColumn',
                     'template' => "{update} {delete}"
                 ],
             ],

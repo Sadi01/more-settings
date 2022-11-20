@@ -13,7 +13,7 @@ class SettingsAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/sadi01/yii2-more-settings/assets';
+    public $sourcePath = '@vendor/sadi01/yii2-more-settings/src/assets';
     /**
      * @inheritdoc
      */

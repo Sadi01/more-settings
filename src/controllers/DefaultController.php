@@ -352,7 +352,7 @@ class DefaultController extends Controller
             return $model;
         }
 
-        throw new NotFoundHttpException(Yii::t('common', 'The requested page does not exist.'));
+        throw new NotFoundHttpException(Yii::t('more-settings/common', 'The requested page does not exist.'));
     }
 
     public function flash($type, $message)

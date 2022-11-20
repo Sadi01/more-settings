@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'Are you sure you want to delete selected item(s)?' => 'آیا از پاک شدن آیتم (های) انتخاب شده اطمینان دارید؟',
+    'Are you sure you want to delete this item?' => 'آیا از حذف این آیتم اطمینان دارید؟',
+    'The requested page does not exist.' => 'صفحه درخواستی یافت نشد.',
+    'The requested setting category does not exist.' => '',
+    'The requested setting does not exist.' => '',
+    'Repetitive Setting Category Name' => 'نام دسته تنظیم تکراری است',
+    'Loading ...' => 'در حال بارگذاری ...',
+    'Save' => 'ذخیره',
+    'Add' => 'اضافه کردن',
+    'Cancel' => 'لغو',
+    'Remove selected row(s).' => 'حذف سطر(های) انتخاب شده',
+    'Are you sure?' => 'آیا اطمینان دارید؟',
+    "You won't be able to revert this!" => 'امکان بازگشت وجود ندارد!',
+    "Yes, delete it!" => 'بله، حذف شود!',
+    'Deleted!' => 'حذف شد!',
+    'Item has been deleted.' => 'مورد حذف شد.',
+    'Error on delete!' => 'خطا در حذف!',
+    'Select one or more row!' => 'ابتدا یک یا چند سطر را انتخاب کنید!',
+    'Items have been deleted!' => 'حذف شدند!',
+    'Selected items have been deleted.' => 'موارد انتخاب شده حذف شدند.',
+    'Yes, delete selected items!' => 'بله، موارد انتخاب شده حذف شوند!',
+];

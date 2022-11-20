@@ -543,7 +543,7 @@ switch ($settingModel->type) {
 
 ?>
     <div class="form-group">
-        <?= Html::submitButton(Yii::t('common', 'Save'), ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton(Yii::t('more-settings/common', 'Save'), ['class' => 'btn btn-success']) ?>
     </div>
 
 <?php ActiveForm::end(); ?>

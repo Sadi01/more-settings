@@ -124,7 +124,7 @@ class SettingsWidget extends Widget
         $this->settingCatModel = SettingCat::find()->withTitle($this->categoryName)->one();
 
         if (!$this->settingCatModel instanceof SettingCat) {
-            throw new NotFoundHttpException(Yii::t('common', 'The requested setting category does not exist.'));
+            throw new NotFoundHttpException(Yii::t('more-settings/common', 'The requested setting category does not exist.'));
         }
 
         if (!$this->settingCatModel->is_public && !$this->model instanceof ActiveRecord) {
@@ -134,7 +134,7 @@ class SettingsWidget extends Widget
         $this->settingModel = Settings::find()->withNameAndcatId($this->settingName, $this->settingCatModel->id)->one();
 
         if (!$this->settingModel instanceof Settings) {
-            throw new NotFoundHttpException(Yii::t('common', 'The requested setting does not exist.'));
+            throw new NotFoundHttpException(Yii::t('more-settings/common', 'The requested setting does not exist.'));
         }
 
         if (!$this->settingCatModel->is_public) {
@@ -194,7 +194,7 @@ class SettingsWidget extends Widget
         }
 
         if (empty($this->loadingText)) {
-            $this->loadingText = Yii::t('common', 'Loading ...');
+            $this->loadingText = Yii::t('more-settings/common', 'Loading ...');
         }
 
         if (empty($this->loadingTag)) {

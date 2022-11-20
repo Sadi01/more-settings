@@ -51,6 +51,7 @@ class SettingsModule extends Module implements BootstrapInterface
                 'sourceLanguage' => 'en-US',
                 'fileMap' => [
                     'more-settings' => 'main.php',
+                    'common' => 'common.php',
                 ],
             ];
         }

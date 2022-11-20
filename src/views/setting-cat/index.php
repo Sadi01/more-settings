@@ -67,7 +67,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
                 'model_class',
                 [
-                    'class' => 'common\widgets\grid\ActionColumn',
+                    'class' => 'sadi01\moresettings\widgets\grid\ActionColumn',
                     'template' => "{update} {delete}"
                 ],
             ],
