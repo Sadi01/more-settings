@@ -1,6 +1,6 @@
 <?php
 
-namespace sadi01\postecommerce;
+namespace sadi01\moresettings;
 
 use WebApplication;
 use yii\base\Application;
