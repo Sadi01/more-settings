@@ -41,7 +41,7 @@ migrations. Make sure that you have properly configured `db` application compone
 and run the following command:
 
 ```bash
-$ php yii migrate/up --migrationPath=@vendor/sadi01/yii2-moresettings/migrations
+$ php yii migrate/up --migrationPath=@vendor/sadi01/yii2-more-settings/src/migrations
 ```
 
 

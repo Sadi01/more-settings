@@ -6,6 +6,7 @@ use Yii;
 use yii\base\BootstrapInterface;
 use yii\base\Module;
 use yii\i18n\PhpMessageSource;
+use yii\base\InvalidArgumentException;
 
 /**
  * Settings module definition class
@@ -54,5 +55,4 @@ class SettingsModule extends Module implements BootstrapInterface
             ];
         }
     }
-
 }
