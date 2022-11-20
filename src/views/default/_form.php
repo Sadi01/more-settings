@@ -12,7 +12,6 @@ use yii\bootstrap4\Modal;
 use yii\widgets\Pjax;
 use sadi01\moresettings\helpers\CustomHtmlHelper;
 use yii\web\View;
-use sadi01\moresettings\models\Settings;
 use sadi01\moresettings\models\SettingOption;
 
 /* @var $this View */
