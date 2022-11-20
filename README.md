@@ -27,7 +27,7 @@ return [
     'modules' => [
         'moresettings' => [
             'class' => 'sadi01\moresettings\SettingsModule',
-            'rootAlias' => '@webRoot',
+            'rootAlias' => '@webroot',
             'webAlias' => '@web',
         ],
     ]
