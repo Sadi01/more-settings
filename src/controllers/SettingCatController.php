@@ -36,7 +36,7 @@ class SettingCatController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['superAdmin'],
+                        'roles' => ['@'],
                         'actions' => ['index', 'create', 'update', 'delete', 'create-ajax', 'delete-selected']
                     ]
                 ]
