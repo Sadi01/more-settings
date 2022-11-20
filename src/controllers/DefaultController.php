@@ -40,12 +40,12 @@ class DefaultController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['superAdmin'],
+                        'roles' => ['@'],
                         'actions' => ['create', 'update', 'delete', 'delete-selected']
                     ],
                     [
                         'allow' => true,
-                        'roles' => ['superAdmin'],
+                        'roles' => ['@'],
                         'actions' => ['index']
                     ],
                     [
