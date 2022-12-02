@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class ValidationAsset extends AssetBundle
 {
-    public $sourcePath = __DIR__ . '/assets';
+    public $sourcePath = __DIR__ . '/../assets';
 
     public $js = [
         'js/validation.js',
